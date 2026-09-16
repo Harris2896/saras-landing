@@ -1,0 +1,10 @@
+node_modules/
+image-*.jpg
+image-*.webp
+contact.jpg
+saras-home.html
+outputs/
+.env
+*.tar.gz
+.netlify/
+.openai/

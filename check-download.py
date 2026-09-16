@@ -1,0 +1,16 @@
+import os
+
+avatars = [
+    ('avatar-nl.svg', 'NL', '#16395f'),
+    ('avatar-ta.svg', 'TA', '#782035'),
+    ('avatar-ht.svg', 'PT', '#1a5235'),
+    ('avatar-qd.svg', 'QD', '#2b3a55'),
+    ('avatar-lm.svg', 'LM', '#8a5c18')
+]
+
+for filename, text, bg in avatars:
+    svg = f'<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96"><rect width="96" height="96" rx="48" fill="{bg}"/><circle cx="48" cy="48" r="41" fill="none" stroke="#d8ba7c" stroke-width="1.5"/><path d="M13 69q5 12 18 16M65 11q13 4 18 16" fill="none" stroke="#d8ba7c" stroke-width="3" stroke-linecap="round"/><text x="48" y="57" text-anchor="middle" font-family="Georgia,serif" font-size="31" fill="#fff8e8">{text}</text></svg>'
+    with open('dist/assets/' + filename, 'w', encoding='utf-8') as f:
+        f.write(svg)
+    print('Created', filename)
+
