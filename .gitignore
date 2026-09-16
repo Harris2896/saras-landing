@@ -1,7 +1,8 @@
 node_modules/
-image-*.jpg
-image-*.webp
-contact.jpg
+/image-*.jpg
+/image-*.webp
+/contact.jpg
+!dist/assets/**
 saras-home.html
 outputs/
 .env
